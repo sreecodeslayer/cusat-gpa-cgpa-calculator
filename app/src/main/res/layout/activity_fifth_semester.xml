@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="imsreenadh.gpacgpa.FifthSemester">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/entergrades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Enter Grades"
+                android:textSize="18sp" />
+
+            <!-- 1501 -->
+            <TextView
+                android:id="@+id/_1501"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/entergrades"
+                android:padding="10dp"
+                android:text="1501 : " />
+
+            <Spinner
+                android:id="@+id/spinner1501"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/entergrades"
+                android:layout_toEndOf="@+id/_1501"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+            <!-- 1502 -->
+            <TextView
+                android:id="@+id/_1502"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1501"
+                android:padding="10dp"
+                android:text="1502 : " />
+
+            <Spinner
+                android:id="@+id/spinner1502"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1501"
+                android:layout_toEndOf="@+id/_1502"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 1503 -->
+            <TextView
+                android:id="@+id/_1503"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1502"
+                android:padding="10dp"
+                android:text="1503 : " />
+
+            <Spinner
+                android:id="@+id/spinner1503"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1502"
+                android:layout_toEndOf="@+id/_1503"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 1504 -->
+            <TextView
+                android:id="@+id/_1504"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1503"
+                android:padding="10dp"
+                android:text="1504 : " />
+
+            <Spinner
+                android:id="@+id/spinner1504"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1503"
+                android:layout_toEndOf="@+id/_1504"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 1505 -->
+            <TextView
+                android:id="@+id/_1505"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1504"
+                android:padding="10dp"
+                android:text="1505 : " />
+
+            <Spinner
+                android:id="@+id/spinner1505"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1504"
+                android:layout_toEndOf="@+id/_1505"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 1506 -->
+            <TextView
+                android:id="@+id/_1506"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1505"
+                android:padding="10dp"
+                android:text="1506 : " />
+
+            <Spinner
+                android:id="@+id/spinner1506"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1505"
+                android:layout_toEndOf="@+id/_1506"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 1507 -->
+            <TextView
+                android:id="@+id/_15L1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1506"
+                android:padding="10dp"
+                android:text="15L1 : " />
+
+            <Spinner
+                android:id="@+id/spinner15L1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1506"
+                android:layout_toEndOf="@+id/_15L1"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 1508 -->
+            <TextView
+                android:id="@+id/_15L2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner15L1"
+                android:padding="10dp"
+                android:text="15L2 : " />
+
+            <Spinner
+                android:id="@+id/spinner15L2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner15L1"
+                android:layout_toEndOf="@+id/_15L1"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/_15L2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/calculateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spinner15L2"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.5"
+                    android:background="#43A047"
+                    android:onClick="calculateGPA"
+                    android:text="CALCULATE"
+                    android:textColor="#FFF" />
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.5"
+                    android:background="#9E9E9E"
+                    android:onClick="cancelButtonClicked"
+                    android:text="CANCEL"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
