@@ -233,7 +233,7 @@ public class ThirdSemester extends AppCompatActivity {
 
         new AlertDialog.Builder(this)
                 .setTitle("SEMESTER III GPA")
-                .setMessage("Your GPA for First Year is : " + String.format("%.2f",gpa) + "\n\nReturn back home?")
+                .setMessage("Your GPA for Third Semester is : " + String.format("%.2f",gpa) + "\n\nReturn back home?")
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
 

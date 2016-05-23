@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="imsreenadh.gpacgpa.SixthSemester">
+    tools:context=".EighthSemester">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,153 +25,115 @@
                 android:text="Enter Grades"
                 android:textSize="18sp" />
 
-            <!-- 1601 -->
+            <!-- 1801 -->
             <TextView
-                android:id="@+id/_1601"
+                android:id="@+id/_1801"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/entergrades"
                 android:padding="10dp"
-                android:text="1601 : " />
+                android:text="1801 : " />
 
             <Spinner
-                android:id="@+id/spinner1601"
-                android:layout_width="160dp"
+                android:id="@+id/spinner1801"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/entergrades"
-                android:layout_toEndOf="@+id/_1601"
+                android:layout_toEndOf="@+id/_1801"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
-            <!-- 1602 -->
+            <!-- 1802 -->
             <TextView
-                android:id="@+id/_1602"
+                android:id="@+id/_1802"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1601"
+                android:layout_below="@+id/spinner1801"
                 android:padding="10dp"
-                android:text="1602 : " />
+                android:text="1802 : " />
 
             <Spinner
-                android:id="@+id/spinner1602"
-                android:layout_width="160dp"
+                android:id="@+id/spinner1802"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1601"
-                android:layout_toEndOf="@+id/_1602"
-                android:entries="@array/grades"
-                android:padding="10dp"
-                android:textAlignment="center" />
-
-            <!-- 1603 -->
-            <TextView
-                android:id="@+id/_1603"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1602"
-                android:padding="10dp"
-                android:text="1603 : " />
-
-            <Spinner
-                android:id="@+id/spinner1603"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1602"
-                android:layout_toEndOf="@+id/_1603"
+                android:layout_below="@+id/spinner1801"
+                android:layout_toEndOf="@+id/_1802"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
 
-            <!-- 1604 -->
+            <!-- 1803 -->
             <TextView
-                android:id="@+id/_1604"
+                android:id="@+id/_1803"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1603"
+                android:layout_below="@+id/spinner1802"
                 android:padding="10dp"
-                android:text="1604 : " />
+                android:text="1803 : " />
 
             <Spinner
-                android:id="@+id/spinner1604"
-                android:layout_width="160dp"
+                android:id="@+id/spinner1803"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1603"
-                android:layout_toEndOf="@+id/_1604"
+                android:layout_below="@+id/spinner1802"
+                android:layout_toEndOf="@+id/_1803"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
 
-            <!-- 1605 -->
+            <!-- 1804 -->
             <TextView
-                android:id="@+id/_1605"
+                android:id="@+id/_1804"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1604"
+                android:layout_below="@+id/spinner1803"
                 android:padding="10dp"
-                android:text="1605 : " />
+                android:text="1804 : " />
 
             <Spinner
-                android:id="@+id/spinner1605"
-                android:layout_width="160dp"
+                android:id="@+id/spinner1804"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1604"
-                android:layout_toEndOf="@+id/_1605"
+                android:layout_below="@+id/spinner1803"
+                android:layout_toEndOf="@+id/_1804"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+            
+            <!-- 1807 -->
+            <TextView
+                android:id="@+id/_18L1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1804"
+                android:padding="10dp"
+                android:text="18L1 : " />
+
+            <Spinner
+                android:id="@+id/spinner18L1"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1804"
+                android:layout_toEndOf="@+id/_18L1"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
 
-            <!-- 1606 -->
+            <!-- 1808 -->
             <TextView
-                android:id="@+id/_1606"
+                android:id="@+id/_18L2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1605"
+                android:layout_below="@+id/spinner18L1"
                 android:padding="10dp"
-                android:text="1606 : " />
+                android:text="18L2 : " />
 
             <Spinner
-                android:id="@+id/spinner1606"
-                android:layout_width="160dp"
+                android:id="@+id/spinner18L2"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1605"
-                android:layout_toEndOf="@+id/_1606"
-                android:entries="@array/grades"
-                android:padding="10dp"
-                android:textAlignment="center" />
-
-            <!-- 1607 -->
-            <TextView
-                android:id="@+id/_16L1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1606"
-                android:padding="10dp"
-                android:text="16L1 : " />
-
-            <Spinner
-                android:id="@+id/spinner16L1"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1606"
-                android:layout_toEndOf="@+id/_16L1"
-                android:entries="@array/grades"
-                android:padding="10dp"
-                android:textAlignment="center" />
-
-            <!-- 1608 -->
-            <TextView
-                android:id="@+id/_16L2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner16L1"
-                android:padding="10dp"
-                android:text="16L2 : " />
-
-            <Spinner
-                android:id="@+id/spinner16L2"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner16L1"
-                android:layout_toEndOf="@+id/_16L1"
+                android:layout_below="@+id/spinner18L1"
+                android:layout_toEndOf="@+id/_18L1"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
@@ -179,7 +141,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/_16L2"
+                android:layout_below="@+id/_18L2"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -187,10 +149,10 @@
                     android:id="@+id/calculateButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/spinner16L2"
+                    android:layout_below="@id/spinner18L2"
                     android:layout_marginStart="5dp"
                     android:layout_weight="0.5"
-                    android:background="#43A047"
+                    android:background="#BA68C8"
                     android:onClick="calculateGPA"
                     android:text="CALCULATE"
                     android:textColor="#FFF" />

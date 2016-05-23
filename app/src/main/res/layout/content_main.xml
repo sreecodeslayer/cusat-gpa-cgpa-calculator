@@ -81,9 +81,10 @@
                 android:padding="16dp"
                 android:text="SEMESTER VI"
                 android:textColor="#fff" />
+
             <!-- SEVENTH SEM -->
             <Button
-                android:id="@+id/sevenththSemButton"
+                android:id="@+id/seventhSemButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/sixthSemButton"
@@ -92,6 +93,19 @@
                 android:onClick="seventhSemesterButtonClicked"
                 android:padding="16dp"
                 android:text="SEMESTER VII"
+                android:textColor="#fff" />
+
+            <!-- EIGTH SEM -->
+            <Button
+                android:id="@+id/eigthSemButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seventhSemButton"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="#BA68C8"
+                android:onClick="eigthSemesterButtonClicked"
+                android:padding="16dp"
+                android:text="SEMESTER VIII"
                 android:textColor="#fff" />
         </RelativeLayout>
     </ScrollView>
