@@ -30,3 +30,8 @@ proguard/
 
 # Android Studio captures folder
 captures/
+
+# IDEA Folders
+.idea
+app/.gitignore
+app/src/test/

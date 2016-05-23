@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GPA CGPA</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="grades">
+        <item>S</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>F</item>
+    </string-array>
+</resources>
