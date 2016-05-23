@@ -9,13 +9,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".FirstYear" />
@@ -24,7 +31,7 @@
         <activity android:name=".FifthSemester" />
         <activity android:name=".SixthSemester" />
         <activity android:name=".SeventhSemester" />
-        <activity android:name=".EighthSemester"></activity>
+        <activity android:name=".EighthSemester" />
     </application>
 
 </manifest>
