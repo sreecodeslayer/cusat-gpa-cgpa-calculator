@@ -56,4 +56,8 @@ public class MainActivity extends AppCompatActivity {
     public void thirdSemesterButtonClicked(View view) {
         startActivity(new Intent(this, ThirdSemester.class));
     }
+
+    public void forthSemesterButtonClicked(View view) {
+        startActivity(new Intent(this, ForthSemester.class));
+    }
 }

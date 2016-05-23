@@ -1,6 +1,7 @@
 package imsreenadh.gpacgpa;
 
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -49,12 +50,13 @@ public class FirstYear extends AppCompatActivity {
             gp11L2,
             gp11L3;
 
-    int gpa;
+    double gpa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_year);
+
         sp1101 = (Spinner) findViewById(R.id.spinner1101);
         sp1101.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -318,14 +320,14 @@ public class FirstYear extends AppCompatActivity {
                 + (gp11L1 * 4)
                 + (gp11L2 * 2)
                 + (gp11L3 * 1))
-                / (44);
+                / (44.0);
 
         /*Toast.makeText(getApplicationContext(),
                 "GPA is: " + gpa, Toast.LENGTH_LONG).show();*/
 
         new AlertDialog.Builder(this)
                 .setTitle("SEMESTER I&II GPA")
-                .setMessage("Your GPA for First Year is : " + gpa + "\n\nReturn back home?")
+                .setMessage("Your GPA for First Year is : " + String.format("%.2f",gpa) + "\n\nReturn back home?")
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
 

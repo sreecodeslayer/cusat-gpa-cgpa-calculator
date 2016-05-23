@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".FirstYear" />
-        <activity android:name=".ThirdSemester"/>
+        <activity android:name=".ThirdSemester" />
+        <activity android:name=".ForthSemester"></activity>
     </application>
 
 </manifest>
