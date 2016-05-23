@@ -55,6 +55,44 @@
                 android:padding="16dp"
                 android:text="SEMESTER IV"
                 android:textColor="#fff" />
+
+            <!-- FIFTH SEM -->
+            <Button
+                android:id="@+id/fifthSemButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forthSemButton"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="#43A047"
+                android:onClick="fifthSemesterButtonClicked"
+                android:padding="16dp"
+                android:text="SEMESTER V"
+                android:textColor="#fff" />
+
+            <!-- SIXTH SEM -->
+            <Button
+                android:id="@+id/sixthSemButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fifthSemButton"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="#5E35B1"
+                android:onClick="sixthSemesterButtonClicked"
+                android:padding="16dp"
+                android:text="SEMESTER VI"
+                android:textColor="#fff" />
+            <!-- SEVENTH SEM -->
+            <Button
+                android:id="@+id/sevenththSemButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sixthSemButton"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="#009688"
+                android:onClick="seventhSemesterButtonClicked"
+                android:padding="16dp"
+                android:text="SEMESTER VII"
+                android:textColor="#fff" />
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

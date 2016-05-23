@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="imsreenadh.gpacgpa.SeventhSemester">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/entergrades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Enter Grades"
+                android:textSize="18sp" />
+
+            <!-- 1701 -->
+            <TextView
+                android:id="@+id/_1701"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/entergrades"
+                android:padding="10dp"
+                android:text="1701 : " />
+
+            <Spinner
+                android:id="@+id/spinner1701"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/entergrades"
+                android:layout_toEndOf="@+id/_1701"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+            <!-- 1702 -->
+            <TextView
+                android:id="@+id/_1702"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1701"
+                android:padding="10dp"
+                android:text="1702 : " />
+
+            <Spinner
+                android:id="@+id/spinner1702"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1701"
+                android:layout_toEndOf="@+id/_1702"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 1703 -->
+            <TextView
+                android:id="@+id/_1703"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1702"
+                android:padding="10dp"
+                android:text="1703 : " />
+
+            <Spinner
+                android:id="@+id/spinner1703"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1702"
+                android:layout_toEndOf="@+id/_1703"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 1704 -->
+            <TextView
+                android:id="@+id/_1704"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1703"
+                android:padding="10dp"
+                android:text="1704 : " />
+
+            <Spinner
+                android:id="@+id/spinner1704"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1703"
+                android:layout_toEndOf="@+id/_1704"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 1705 -->
+            <TextView
+                android:id="@+id/_1705"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1704"
+                android:padding="10dp"
+                android:text="1705 : " />
+
+            <Spinner
+                android:id="@+id/spinner1705"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1704"
+                android:layout_toEndOf="@+id/_1705"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 17L1 -->
+            <TextView
+                android:id="@+id/_17L1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1705"
+                android:padding="10dp"
+                android:text="17L1 : " />
+
+            <Spinner
+                android:id="@+id/spinner17L1"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1705"
+                android:layout_toEndOf="@+id/_17L1"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 17L2 -->
+            <TextView
+                android:id="@+id/_17L2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner17L1"
+                android:padding="10dp"
+                android:text="17L2 : " />
+
+            <Spinner
+                android:id="@+id/spinner17L2"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner17L1"
+                android:layout_toEndOf="@+id/_17L1"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 17L3 -->
+            <TextView
+                android:id="@+id/_17L3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner17L2"
+                android:padding="10dp"
+                android:text="17L3 : " />
+
+            <Spinner
+                android:id="@+id/spinner17L3"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner17L2"
+                android:layout_toEndOf="@+id/_17L1"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <!-- 17L4 -->
+            <TextView
+                android:id="@+id/_17L4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner17L3"
+                android:padding="10dp"
+                android:text="17L4 : " />
+
+            <Spinner
+                android:id="@+id/spinner17L4"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner17L3"
+                android:layout_toEndOf="@+id/_17L4"
+                android:entries="@array/grades"
+                android:padding="10dp"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/_17L4"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/calculateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spinner17L4"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.5"
+                    android:background="#009688"
+                    android:onClick="calculateGPA"
+                    android:text="CALCULATE"
+                    android:textColor="#FFF" />
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.5"
+                    android:background="#9E9E9E"
+                    android:onClick="cancelButtonClicked"
+                    android:text="CANCEL"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
