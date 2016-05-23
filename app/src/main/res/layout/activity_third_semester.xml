@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="imsreenadh.gpacgpa.FirstYear">
+    tools:context="imsreenadh.gpacgpa.SecondSemester">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,229 +25,153 @@
                 android:text="Enter Grades"
                 android:textSize="18sp" />
 
-            <!-- 1101 -->
+            <!-- 1301 -->
             <TextView
-                android:id="@+id/_1101"
+                android:id="@+id/_1301"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/entergrades"
                 android:padding="10dp"
-                android:text="1101 : " />
+                android:text="1301 : " />
 
             <Spinner
-                android:id="@+id/spinner1101"
+                android:id="@+id/spinner1301"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/entergrades"
-                android:layout_toEndOf="@+id/_1101"
+                android:layout_toEndOf="@+id/_1301"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
-            <!-- 1102 -->
+            <!-- 1302 -->
             <TextView
-                android:id="@+id/_1102"
+                android:id="@+id/_1302"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1101"
+                android:layout_below="@+id/spinner1301"
                 android:padding="10dp"
-                android:text="1102 : " />
+                android:text="1302 : " />
 
             <Spinner
-                android:id="@+id/spinner1102"
+                android:id="@+id/spinner1302"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1101"
-                android:layout_toEndOf="@+id/_1102"
-                android:entries="@array/grades"
-                android:padding="10dp"
-                android:textAlignment="center" />
-
-            <!-- 1103 -->
-            <TextView
-                android:id="@+id/_1103"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1102"
-                android:padding="10dp"
-                android:text="1103 : " />
-
-            <Spinner
-                android:id="@+id/spinner1103"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1102"
-                android:layout_toEndOf="@+id/_1103"
+                android:layout_below="@+id/spinner1301"
+                android:layout_toEndOf="@+id/_1302"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
 
-            <!-- 1104 -->
+            <!-- 1303 -->
             <TextView
-                android:id="@+id/_1104"
+                android:id="@+id/_1303"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1103"
+                android:layout_below="@+id/spinner1302"
                 android:padding="10dp"
-                android:text="1104 : " />
+                android:text="1303 : " />
 
             <Spinner
-                android:id="@+id/spinner1104"
+                android:id="@+id/spinner1303"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1103"
-                android:layout_toEndOf="@+id/_1104"
+                android:layout_below="@+id/spinner1302"
+                android:layout_toEndOf="@+id/_1303"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
 
-            <!-- 1105 -->
+            <!-- 1304 -->
             <TextView
-                android:id="@+id/_1105"
+                android:id="@+id/_1304"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1104"
+                android:layout_below="@+id/spinner1303"
                 android:padding="10dp"
-                android:text="1105 : " />
+                android:text="1304 : " />
 
             <Spinner
-                android:id="@+id/spinner1105"
+                android:id="@+id/spinner1304"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1104"
-                android:layout_toEndOf="@+id/_1105"
+                android:layout_below="@+id/spinner1303"
+                android:layout_toEndOf="@+id/_1304"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
 
-            <!-- 1106 -->
+            <!-- 1305 -->
             <TextView
-                android:id="@+id/_1106"
+                android:id="@+id/_1305"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1105"
+                android:layout_below="@+id/spinner1304"
                 android:padding="10dp"
-                android:text="1106 : " />
+                android:text="1305 : " />
 
             <Spinner
-                android:id="@+id/spinner1106"
+                android:id="@+id/spinner1305"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1105"
-                android:layout_toEndOf="@+id/_1106"
+                android:layout_below="@+id/spinner1304"
+                android:layout_toEndOf="@+id/_1305"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
 
-            <!-- 1107 -->
+            <!-- 1306 -->
             <TextView
-                android:id="@+id/_1107"
+                android:id="@+id/_1306"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1106"
+                android:layout_below="@+id/spinner1305"
                 android:padding="10dp"
-                android:text="1107 : " />
+                android:text="1306 : " />
 
             <Spinner
-                android:id="@+id/spinner1107"
+                android:id="@+id/spinner1306"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1106"
-                android:layout_toEndOf="@+id/_1107"
+                android:layout_below="@+id/spinner1305"
+                android:layout_toEndOf="@+id/_1306"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
 
-            <!-- 1108 -->
+            <!-- 1307 -->
             <TextView
-                android:id="@+id/_1108"
+                android:id="@+id/_13L1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1107"
+                android:layout_below="@+id/spinner1306"
                 android:padding="10dp"
-                android:text="1108 : " />
+                android:text="13L1 : " />
 
             <Spinner
-                android:id="@+id/spinner1108"
+                android:id="@+id/spinner13L1"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1107"
-                android:layout_toEndOf="@+id/_1108"
+                android:layout_below="@+id/spinner1306"
+                android:layout_toEndOf="@+id/_13L1"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
 
-            <!-- 1109 -->
+            <!-- 1308 -->
             <TextView
-                android:id="@+id/_1109"
+                android:id="@+id/_13L2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1108"
+                android:layout_below="@+id/spinner13L1"
                 android:padding="10dp"
-                android:text="1109 : " />
+                android:text="13L2 : " />
 
             <Spinner
-                android:id="@+id/spinner1109"
+                android:id="@+id/spinner13L2"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1108"
-                android:layout_toEndOf="@+id/_1109"
-                android:entries="@array/grades"
-                android:padding="10dp"
-                android:textAlignment="center" />
-
-            <!-- 11 L1 -->
-            <TextView
-                android:id="@+id/_11L1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1109"
-                android:padding="10dp"
-                android:text="11 L1 : " />
-
-            <Spinner
-                android:id="@+id/spinner11L1"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1109"
-                android:layout_toEndOf="@+id/_11L1"
-                android:entries="@array/grades"
-                android:padding="10dp"
-                android:textAlignment="center" />
-
-            <!-- 11 L2 -->
-            <TextView
-                android:id="@+id/_11L2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner11L1"
-                android:padding="10dp"
-                android:text="11 L2 : " />
-
-            <Spinner
-                android:id="@+id/spinner11L2"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner11L1"
-                android:layout_toEndOf="@+id/_11L2"
-                android:entries="@array/grades"
-                android:padding="10dp"
-                android:textAlignment="center" />
-
-            <!-- 11 L3 -->
-            <TextView
-                android:id="@+id/_11L3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner11L2"
-                android:padding="10dp"
-                android:text="11 L3 : " />
-
-            <Spinner
-                android:id="@+id/spinner11L3"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner11L2"
-                android:layout_toEndOf="@+id/_11L3"
+                android:layout_below="@+id/spinner13L1"
+                android:layout_toEndOf="@+id/_13L1"
                 android:entries="@array/grades"
                 android:padding="10dp"
                 android:textAlignment="center" />
@@ -255,7 +179,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/_11L3"
+                android:layout_below="@+id/_13L2"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -263,10 +187,10 @@
                     android:id="@+id/calculateButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/spinner11L3"
+                    android:layout_below="@id/spinner13L2"
                     android:layout_marginStart="5dp"
                     android:layout_weight="0.5"
-                    android:background="#FF5252"
+                    android:background="#448AFF"
                     android:onClick="calculateGPA"
                     android:text="CALCULATE"
                     android:textColor="#FFF" />
@@ -282,7 +206,6 @@
                     android:text="CANCEL"
                     android:textColor="#FFF" />
             </LinearLayout>
-
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

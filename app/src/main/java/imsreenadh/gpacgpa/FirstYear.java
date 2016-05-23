@@ -320,11 +320,11 @@ public class FirstYear extends AppCompatActivity {
                 + (gp11L3 * 1))
                 / (44);
 
-        Toast.makeText(getApplicationContext(),
-                "GPA is: " + gpa, Toast.LENGTH_LONG).show();
+        /*Toast.makeText(getApplicationContext(),
+                "GPA is: " + gpa, Toast.LENGTH_LONG).show();*/
 
         new AlertDialog.Builder(this)
-                .setTitle("GPA")
+                .setTitle("SEMESTER I&II GPA")
                 .setMessage("Your GPA for First Year is : " + gpa + "\n\nReturn back home?")
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
@@ -336,5 +336,9 @@ public class FirstYear extends AppCompatActivity {
                 .setNegativeButton(android.R.string.no, null)
                 .setCancelable(false)
                 .show();
+    }
+
+    public void cancelButtonClicked(View view) {
+        FirstYear.super.onBackPressed();
     }
 }

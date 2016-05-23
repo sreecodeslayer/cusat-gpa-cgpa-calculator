@@ -48,10 +48,12 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //OTHERS
     public void firstYearButtonClicked(View view) {
         startActivity(new Intent(this, FirstYear.class));
     }
 
-    //OTHERS
-
+    public void thirdSemesterButtonClicked(View view) {
+        startActivity(new Intent(this, ThirdSemester.class));
+    }
 }

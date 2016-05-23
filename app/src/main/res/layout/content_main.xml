@@ -32,13 +32,13 @@
 
             <!-- THIRD SEM -->
             <Button
-                android:id="@+id/secondSemButton"
+                android:id="@+id/thirdSemButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/firstYearButton"
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
                 android:background="#448AFF"
-                android:onClick="expandableButton2"
+                android:onClick="thirdSemesterButtonClicked"
                 android:padding="16dp"
                 android:text="SEMESTER III"
                 android:textColor="#fff" />
