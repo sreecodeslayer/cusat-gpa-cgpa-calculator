@@ -20,19 +20,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <!-- FIRST YEAR -->
-            <Button
+            <com.rey.material.widget.Button
                 android:id="@+id/firstYearButton"
+                style="@style/Material.Drawable.Ripple.Wave.Light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FF5252"
                 android:onClick="firstYearButtonClicked"
                 android:padding="16dp"
-                android:text="SEMESTER I &amp; II"
-                android:textColor="#fff" />
+                android:text="@string/bSem1and2"
+                android:textColor="#fff"
+                app:rd_backgroundAnimDuration="0"
+                app:rd_enable="true"
+                app:rd_rippleAnimDuration="600"
+                app:rd_rippleColor="#64ffc9c9" />
 
             <!-- THIRD SEM -->
-            <Button
+            <com.rey.material.widget.Button
                 android:id="@+id/thirdSemButton"
+                style="@style/Material.Drawable.Ripple.Wave.Light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/firstYearButton"
@@ -40,12 +46,17 @@
                 android:background="#448AFF"
                 android:onClick="thirdSemesterButtonClicked"
                 android:padding="16dp"
-                android:text="SEMESTER III"
-                android:textColor="#fff" />
+                android:text="@string/bSem3"
+                android:textColor="#fff"
+                app:rd_backgroundAnimDuration="0"
+                app:rd_enable="true"
+                app:rd_rippleAnimDuration="600"
+                app:rd_rippleColor="#65c9ddff" />
 
             <!-- FORTH SEM -->
-            <Button
+            <com.rey.material.widget.Button
                 android:id="@+id/forthSemButton"
+                style="@style/Material.Drawable.Ripple.Wave.Light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/thirdSemButton"
@@ -53,12 +64,17 @@
                 android:background="#FFAB40"
                 android:onClick="forthSemesterButtonClicked"
                 android:padding="16dp"
-                android:text="SEMESTER IV"
-                android:textColor="#fff" />
+                android:text="@string/bSem4"
+                android:textColor="#fff"
+                app:rd_backgroundAnimDuration="0"
+                app:rd_enable="true"
+                app:rd_rippleAnimDuration="600"
+                app:rd_rippleColor="#64ffe7c8" />
 
             <!-- FIFTH SEM -->
-            <Button
+            <com.rey.material.widget.Button
                 android:id="@+id/fifthSemButton"
+                style="@style/Material.Drawable.Ripple.Wave.Light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/forthSemButton"
@@ -66,12 +82,17 @@
                 android:background="#43A047"
                 android:onClick="fifthSemesterButtonClicked"
                 android:padding="16dp"
-                android:text="SEMESTER V"
-                android:textColor="#fff" />
+                android:text="@string/bSem5"
+                android:textColor="#fff"
+                app:rd_backgroundAnimDuration="0"
+                app:rd_enable="true"
+                app:rd_rippleAnimDuration="600"
+                app:rd_rippleColor="#64c8ffcb" />
 
             <!-- SIXTH SEM -->
-            <Button
+            <com.rey.material.widget.Button
                 android:id="@+id/sixthSemButton"
+                style="@style/Material.Drawable.Ripple.Wave.Light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/fifthSemButton"
@@ -79,12 +100,17 @@
                 android:background="#5E35B1"
                 android:onClick="sixthSemesterButtonClicked"
                 android:padding="16dp"
-                android:text="SEMESTER VI"
-                android:textColor="#fff" />
+                android:text="@string/bSem6"
+                android:textColor="#fff"
+                app:rd_backgroundAnimDuration="0"
+                app:rd_enable="true"
+                app:rd_rippleAnimDuration="600"
+                app:rd_rippleColor="#64dac8fd" />
 
             <!-- SEVENTH SEM -->
-            <Button
+            <com.rey.material.widget.Button
                 android:id="@+id/seventhSemButton"
+                style="@style/Material.Drawable.Ripple.Wave.Light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/sixthSemButton"
@@ -92,21 +118,31 @@
                 android:background="#009688"
                 android:onClick="seventhSemesterButtonClicked"
                 android:padding="16dp"
-                android:text="SEMESTER VII"
-                android:textColor="#fff" />
+                android:text="@string/bSem7"
+                android:textColor="#fff"
+                app:rd_backgroundAnimDuration="0"
+                app:rd_enable="true"
+                app:rd_rippleAnimDuration="600"
+                app:rd_rippleColor="#63c8fffa" />
 
             <!-- EIGTH SEM -->
-            <Button
+            <com.rey.material.widget.Button
                 android:id="@+id/eigthSemButton"
+                style="@style/Material.Drawable.Ripple.Wave.Light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/seventhSemButton"
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
                 android:background="#BA68C8"
-                android:onClick="eigthSemesterButtonClicked"
+                android:onClick="eighthSemesterButtonClicked"
                 android:padding="16dp"
-                android:text="SEMESTER VIII"
-                android:textColor="#fff" />
+                android:text="@string/bSem8"
+                android:textColor="#fff"
+                app:rd_backgroundAnimDuration="0"
+                app:rd_enable="true"
+                app:rd_rippleAnimDuration="600"
+                app:rd_rippleColor="#64f7caff" />
+
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

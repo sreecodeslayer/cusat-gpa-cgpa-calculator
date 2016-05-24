@@ -7,12 +7,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.Spinner;
-import android.widget.Toast;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +19,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
     }
-
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -49,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //OTHERS
+
+
     public void firstYearButtonClicked(View view) {
         startActivity(new Intent(this, FirstYear.class));
     }
@@ -73,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, SeventhSemester.class));
     }
 
-    public void eigthSemesterButtonClicked(View view) {
+    public void eighthSemesterButtonClicked(View view) {
         startActivity(new Intent(this, EighthSemester.class));
     }
 }
