@@ -8,6 +8,12 @@
     <string name="bSem6">SEMESTER VI</string>
     <string name="bSem7">SEMESTER VII</string>
     <string name="bSem8">SEMESTER VIII</string>
+    <string name="grade_s">S</string>
+    <string name="grade_a">A</string>
+    <string name="grade_b">B</string>
+    <string name="grade_c">C</string>
+    <string name="grade_d">D</string>
+    <string name="grade_f">F</string>
     <string-array name="grades">
         <item>S</item>
         <item>A</item>

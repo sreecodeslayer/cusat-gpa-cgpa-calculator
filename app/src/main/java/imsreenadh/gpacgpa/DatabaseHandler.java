@@ -5,8 +5,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import java.util.List;
-
 /**
  * Created by Sreenadh TC on 25-05-2016.
  */
@@ -85,6 +83,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_REG_NO, user.get_regnum()); // Update reg num
     }
 
+    /*
     // Getting single user
     public User getUser(int id) {
     }
@@ -105,13 +104,15 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void deleteUser(User user) {
     }
 
+    */
+    
     // Insert First year details
     public void insertFirstYear(User user) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        
+
         char[] tmpFirstYear = user.get_firstYear();
-        
+
         values.put(KEY_1101, String.valueOf(tmpFirstYear[0]));
         values.put(KEY_1102, String.valueOf(tmpFirstYear[1]));
         values.put(KEY_1103, String.valueOf(tmpFirstYear[2]));
@@ -130,9 +131,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void insertThirdSem(User user) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        
+
         char[] tmpThird = user.get_thirdSem();
-        
+
         values.put(KEY_1301, String.valueOf(tmpThird[0]));
         values.put(KEY_1302, String.valueOf(tmpThird[1]));
         values.put(KEY_1303, String.valueOf(tmpThird[2]));
@@ -147,9 +148,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void insertForthSem(User user) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        
+
         char[] tmpForth = user.get_forthSem();
-        
+
         values.put(KEY_1401, String.valueOf(tmpForth[0]));
         values.put(KEY_1402, String.valueOf(tmpForth[1]));
         values.put(KEY_1403, String.valueOf(tmpForth[2]));
@@ -164,9 +165,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void insertFifthSem(User user) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        
+
         char[] tmpFifth = user.get_fifthSem();
-        
+
         values.put(KEY_1501, String.valueOf(tmpFifth[0]));
         values.put(KEY_1502, String.valueOf(tmpFifth[1]));
         values.put(KEY_1503, String.valueOf(tmpFifth[2]));
@@ -181,9 +182,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void insertSixthSem(User user) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        
+
         char[] tmpSixth = user.get_sixthSem();
-        
+
         values.put(KEY_1601, String.valueOf(tmpSixth[0]));
         values.put(KEY_1602, String.valueOf(tmpSixth[1]));
         values.put(KEY_1603, String.valueOf(tmpSixth[2]));
@@ -226,8 +227,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_18L2, String.valueOf(tmpEighth[5]));
         System.out.println("DatabaseHandler : Sixth Sem Insertion successfull");
     }
-    
-    
+
+
     // Other helper functions (if any)
 
 }

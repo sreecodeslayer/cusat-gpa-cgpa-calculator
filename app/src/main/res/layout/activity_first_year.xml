@@ -10,57 +10,74 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="imsreenadh.gpacgpa.FirstYear">
 
+    <com.rey.material.widget.EditText
+        android:id="@+id/enterRegNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Register Number"
+        android:inputType="number"
+        app:et_dividerPadding="8dp"
+        app:et_helper="1101"
+        app:et_labelEnable="true"
+        app:et_labelPadding="8dp"
+        app:et_labelTextColor="@color/colorAccent"
+        app:et_labelTextSize="18sp"
+        app:spn_arrowColor="@color/colorAccent" />
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterRegNum">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="2">
 
             <TextView
                 android:id="@+id/entergrades"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:padding="10dp"
-                android:text="Enter Grades"
-                android:textSize="18sp" />
+                android:text="Enter Grades" />
 
             <!-- 1101 -->
-            <TextView
-                android:id="@+id/_1101"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/entergrades"
-                android:padding="10dp"
-                android:text="1101 : " />
-
-            <Spinner
+            <com.rey.material.widget.Spinner
                 android:id="@+id/spinner1101"
-                android:layout_width="150dp"
+                style="@style/Material.Widget.Spinner"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/entergrades"
-                android:layout_toEndOf="@+id/_1101"
-                android:entries="@array/grades"
-                android:padding="10dp"
-                android:textAlignment="center" />
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="0.75"
+                android:padding="8dp"
+                android:textAlignment="center"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                app:spn_arrowSwitchMode="true"
+                app:spn_dividerColor="@color/colorAccent"
+                app:spn_label="1101"
+                app:spn_labelEnable="true"
+                app:spn_labelTextColor="@android:color/darker_gray" />
             <!-- 1102 -->
+
             <TextView
                 android:id="@+id/_1102"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1101"
                 android:padding="10dp"
                 android:text="1102 : " />
 
-            <Spinner
+            <com.rey.material.widget.Spinner
                 android:id="@+id/spinner1102"
+                style="@style/Material.Widget.Spinner"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1101"
-                android:layout_toEndOf="@+id/_1102"
                 android:entries="@array/grades"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textAlignment="center" />
 
             <!-- 1103 -->
@@ -68,18 +85,18 @@
                 android:id="@+id/_1103"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1102"
                 android:padding="10dp"
                 android:text="1103 : " />
 
-            <Spinner
+            <com.rey.material.widget.Spinner
                 android:id="@+id/spinner1103"
+                style="@style/Material.Widget.Spinner"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/spinner1102"
                 android:layout_toEndOf="@+id/_1103"
                 android:entries="@array/grades"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textAlignment="center" />
 
             <!-- 1104 -->
@@ -91,14 +108,15 @@
                 android:padding="10dp"
                 android:text="1104 : " />
 
-            <Spinner
+            <com.rey.material.widget.Spinner
                 android:id="@+id/spinner1104"
+                style="@style/Material.Widget.Spinner"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/spinner1103"
                 android:layout_toEndOf="@+id/_1104"
                 android:entries="@array/grades"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textAlignment="center" />
 
             <!-- 1105 -->
@@ -106,18 +124,16 @@
                 android:id="@+id/_1105"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1104"
                 android:padding="10dp"
                 android:text="1105 : " />
 
-            <Spinner
+            <com.rey.material.widget.Spinner
                 android:id="@+id/spinner1105"
+                style="@style/Material.Widget.Spinner"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1104"
-                android:layout_toEndOf="@+id/_1105"
                 android:entries="@array/grades"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textAlignment="center" />
 
             <!-- 1106 -->
@@ -125,18 +141,16 @@
                 android:id="@+id/_1106"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1105"
                 android:padding="10dp"
                 android:text="1106 : " />
 
-            <Spinner
+            <com.rey.material.widget.Spinner
                 android:id="@+id/spinner1106"
+                style="@style/Material.Widget.Spinner"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1105"
-                android:layout_toEndOf="@+id/_1106"
                 android:entries="@array/grades"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textAlignment="center" />
 
             <!-- 1107 -->
@@ -144,18 +158,16 @@
                 android:id="@+id/_1107"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1106"
                 android:padding="10dp"
                 android:text="1107 : " />
 
-            <Spinner
+            <com.rey.material.widget.Spinner
                 android:id="@+id/spinner1107"
+                style="@style/Material.Widget.Spinner"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1106"
-                android:layout_toEndOf="@+id/_1107"
                 android:entries="@array/grades"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textAlignment="center" />
 
             <!-- 1108 -->
@@ -167,14 +179,13 @@
                 android:padding="10dp"
                 android:text="1108 : " />
 
-            <Spinner
+            <com.rey.material.widget.Spinner
                 android:id="@+id/spinner1108"
+                style="@style/Material.Widget.Spinner"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1107"
-                android:layout_toEndOf="@+id/_1108"
                 android:entries="@array/grades"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textAlignment="center" />
 
             <!-- 1109 -->
@@ -182,18 +193,16 @@
                 android:id="@+id/_1109"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1108"
                 android:padding="10dp"
                 android:text="1109 : " />
 
-            <Spinner
+            <com.rey.material.widget.Spinner
                 android:id="@+id/spinner1109"
+                style="@style/Material.Widget.Spinner"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1108"
-                android:layout_toEndOf="@+id/_1109"
                 android:entries="@array/grades"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textAlignment="center" />
 
             <!-- 11 L1 -->
@@ -201,18 +210,16 @@
                 android:id="@+id/_11L1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1109"
                 android:padding="10dp"
                 android:text="11 L1 : " />
 
-            <Spinner
+            <com.rey.material.widget.Spinner
                 android:id="@+id/spinner11L1"
+                style="@style/Material.Widget.Spinner"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner1109"
-                android:layout_toEndOf="@+id/_11L1"
                 android:entries="@array/grades"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textAlignment="center" />
 
             <!-- 11 L2 -->
@@ -220,18 +227,16 @@
                 android:id="@+id/_11L2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner11L1"
                 android:padding="10dp"
                 android:text="11 L2 : " />
 
-            <Spinner
+            <com.rey.material.widget.Spinner
                 android:id="@+id/spinner11L2"
+                style="@style/Material.Widget.Spinner"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner11L1"
-                android:layout_toEndOf="@+id/_11L2"
                 android:entries="@array/grades"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textAlignment="center" />
 
             <!-- 11 L3 -->
@@ -239,18 +244,18 @@
                 android:id="@+id/_11L3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner11L2"
                 android:padding="10dp"
                 android:text="11 L3 : " />
 
-            <Spinner
+            <com.rey.material.widget.Spinner
                 android:id="@+id/spinner11L3"
+                style="@style/Material.Widget.Spinner"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/spinner11L2"
                 android:layout_toEndOf="@+id/_11L3"
                 android:entries="@array/grades"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textAlignment="center" />
 
             <LinearLayout
@@ -293,7 +298,6 @@
                     app:rd_rippleAnimDuration="600"
                     app:rd_rippleColor="#64ffffff" />
             </LinearLayout>
-
-        </RelativeLayout>
+        </LinearLayout>
     </ScrollView>
 </RelativeLayout>

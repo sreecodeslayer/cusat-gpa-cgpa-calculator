@@ -231,7 +231,7 @@ public class ForthSemester extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle("SEMESTER IV GPA")
                 .setMessage("Your GPA for Forth Semester is : " + String.format("%.2f",gpa) + "\n\nReturn back home?")
-                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setIcon(R.mipmap.ic_launcher)
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
 
                     public void onClick(DialogInterface dialog, int whichButton) {
