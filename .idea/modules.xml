@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GPACGPA.iml" filepath="$PROJECT_DIR$/GPACGPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cusat-gpa-cgpa-calculator.iml" filepath="$PROJECT_DIR$/cusat-gpa-cgpa-calculator.iml" />
     </modules>
   </component>
 </project>
