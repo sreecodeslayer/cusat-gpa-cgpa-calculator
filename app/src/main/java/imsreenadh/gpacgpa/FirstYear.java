@@ -1,6 +1,7 @@
 package imsreenadh.gpacgpa;
 
 import android.content.DialogInterface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -10,13 +11,18 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Toast;
+
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.rey.material.widget.Spinner;
 import com.rey.material.widget.TextView;
 import com.rey.material.widget.TimePicker;
 
 public class FirstYear extends AppCompatActivity {
 
-    private CustomSpinnerAdapter mModeAdapter = new CustomSpinnerAdapter();;
+    private CustomSpinnerAdapter mModeAdapter = new CustomSpinnerAdapter();
+    ;
 
     Spinner sp1101,
             sp1102,
@@ -56,6 +62,11 @@ public class FirstYear extends AppCompatActivity {
             gp11L3;
 
     double gpa;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,7 +115,7 @@ public class FirstYear extends AppCompatActivity {
             @Override
             public void onItemSelected(Spinner parent, View view, int position, long id) {
 
-                selectedGrade1103 = mModeAdapter.getItemAsString(position);
+                selectedGrade1104 = mModeAdapter.getItemAsString(position);
                 gp1104 = setGradePoint(selectedGrade1104);
                 gradeToaster(selectedGrade1104);
             }
@@ -383,6 +394,9 @@ public class FirstYear extends AppCompatActivity {
                 // TODO Auto-generated method stub
             }
         });*/
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     private void gradeToaster(String grade) {
@@ -439,7 +453,7 @@ public class FirstYear extends AppCompatActivity {
 
         new AlertDialog.Builder(this)
                 .setTitle("SEMESTER I&II GPA")
-                .setMessage("Your GPA for First Year is : " + String.format("%.2f",gpa) + "\n\nReturn back home?")
+                .setMessage("Your GPA for First Year is : " + String.format("%.2f", gpa) + "\n\nReturn back home?")
                 .setIcon(R.mipmap.ic_launcher)
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
 
@@ -454,6 +468,46 @@ public class FirstYear extends AppCompatActivity {
                 .setNegativeButton(android.R.string.no, null)
                 .setCancelable(false)
                 .show();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client.connect();
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "FirstYear Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app URL is correct.
+                Uri.parse("android-app://imsreenadh.gpacgpa/http/host/path")
+        );
+        AppIndex.AppIndexApi.start(client, viewAction);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "FirstYear Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app URL is correct.
+                Uri.parse("android-app://imsreenadh.gpacgpa/http/host/path")
+        );
+        AppIndex.AppIndexApi.end(client, viewAction);
+        client.disconnect();
     }
 
 
@@ -478,29 +532,27 @@ public class FirstYear extends AppCompatActivity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             View v = convertView;
-            if(v == null)
+            if (v == null)
                 v = LayoutInflater.from(getApplicationContext()).inflate(R.layout.rd_item_mode, parent, false);
 
-            ((TextView)v).setText(mItems[position]);
+            ((TextView) v).setText(mItems[position]);
             return v;
         }
 
         @Override
         public View getDropDownView(int position, View convertView, ViewGroup parent) {
             View v = convertView;
-            if(v == null)
+            if (v == null)
                 v = LayoutInflater.from(getApplicationContext()).inflate(R.layout.rd_item_dropdown_mode, parent, false);
 
-            ((TextView)v).setText(mItems[position]);
+            ((TextView) v).setText(mItems[position]);
             return v;
         }
 
-        public String getItemAsString(int position){
-            return (String.valueOf( mItems[position]));
+        public String getItemAsString(int position) {
+            return (String.valueOf(mItems[position]));
         }
     }
-
-
 
 
     public void cancelButtonClicked(View view) {
